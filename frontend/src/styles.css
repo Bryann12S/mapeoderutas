@@ -1,0 +1,51 @@
+/* frontend/src/styles.css */
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .map-container {
+    height: 600px;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  /* frontend/src/styles.css */
+/* frontend/src/styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-fluid {
+    height: 100%;
+  }
+  
+  .nav-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .nav-link.active {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .map-container {
+    height: calc(100vh - 40px); /* Ajusta la altura según sea necesario */
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
