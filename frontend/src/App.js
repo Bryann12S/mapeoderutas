@@ -8,10 +8,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
-import MainScreen from './components/MainScreen';
-import CardsTab from './components/CardsTab';
-import MappingTab from './components/MappingTab';
-import UsersTab from './components/UsersTab';
+import MainScreen from './pages/MainScreen';
+import CardsTab from './pages/CardsTab';
+import MappingTab from './pages/MappingTab';
+import UsersTab from './pages/UsersTab';
 
 
 function App() {

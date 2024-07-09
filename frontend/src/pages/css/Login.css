@@ -1,0 +1,25 @@
+/* frontend/src/pages/css/Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/fibraban.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+  

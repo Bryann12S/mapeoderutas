@@ -1,6 +1,8 @@
 // frontend/src/pages/Register.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/Register.css';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -25,16 +27,54 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h2>Register</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-        <input type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Full Name" required />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-        <button type="submit">Register</button>
-      </form>
+    <div className="register-container">
+      <div className="register-content text-center">
+        <h2>Register</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Email:</label>
+            <input
+              type="email"
+              className="form-control"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>Full Name:</label>
+            <input
+              type="text"
+              className="form-control"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>Password:</label>
+            <input
+              type="password"
+              className="form-control"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">Register</button>
+        </form>
+        <div className="mt-3">
+          <Link to="/">
+            <button className="btn btn-secondary">Go to Home</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Register;
+

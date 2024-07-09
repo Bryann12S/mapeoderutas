@@ -1,0 +1,23 @@
+/* frontend/src/pages/Home.css */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/fibraban.jpg'); /* Agrega la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-buttons .btn {
+    margin: 10px;
+  }
+  
